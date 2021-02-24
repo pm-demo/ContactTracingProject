@@ -1,7 +1,5 @@
 # Contact Shield Demo
 
-**For any question or error, please shot an email to zxu@futurewei.com.**
-
 #### General Idea:
 
 - All devices keep exchanging annoymous identifiers using Bluetooth
