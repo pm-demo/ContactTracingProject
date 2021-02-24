@@ -28,7 +28,6 @@
 
 apply plugin: 'com.android.application'
 apply plugin: 'com.huawei.agconnect'
-apply plugin: 'org.sonarqube'
 
 
 android {
@@ -113,17 +112,3 @@ dependencies {
     compileOnly 'com.google.android.wearable:wearable:2.5.0'
 }
 
-sonarqube {
-    properties {
-        property "sonar.host.url", "http://localhost:9000/sonarqube"
-
-        property "sonar.login","admin"
-        property "sonar.password","admin"
-        property "sonar.sourceEncoding", "UTF-8"
-        property "sonar.projectKey", "contact.tracing.futurewei"
-        property "sonar.projectName", project.name
-        property "sonar.sources", "src/main/java"
-        property "sonar.projectVersion", project.version
-    }
-
-}
